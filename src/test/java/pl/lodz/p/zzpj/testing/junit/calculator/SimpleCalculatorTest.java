@@ -19,11 +19,6 @@ public class SimpleCalculatorTest {
 
     SimpleCalculator sut;
 
-    @BeforeClass
-    public static void beforeClass() {
-
-    }
-
     @Before
     public void setUp() {
         sut = new SimpleCalculator();

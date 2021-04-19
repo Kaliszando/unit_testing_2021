@@ -53,6 +53,9 @@ public class StackExercise {
      * Throws StackEmptyException if the stack is empty
      */
     public String top() throws StackEmptyException {
+        if (currentIndex == -1) {
+            throw new StackEmptyException();
+        }
         return internalArray[currentIndex];
     }
 
